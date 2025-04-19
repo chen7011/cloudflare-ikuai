@@ -1,6 +1,6 @@
-#           chen7011/cloudflare-ikuai
+#           cloudflare-ikuai
 
-国外一些网站会用cloudflare的CDN，国内用户访问cloudflare不是很友好。于是有了这个软件。他会对cloudflare公开的CDN节点IP测速并且找出速度快的，将IP和域名做绑定。更新到ikuai路由器中去。
+国外一些网站会用cloudflare的CDN，国内用户访问cloudflare不是很友好，常用CF优选寻找速度快的CDN节点来绑定域名，IP寻找到以后需要手动一个个添加到ikuai路由器的DNS代理列表中，相当麻烦。于是有了这个软件。他会对cloudflare公开的CDN节点IP测速并且找出速度快的，将IP和域名做绑定。更新到ikuai路由器中去。默认每天0点会执行一次，可以环境变量调整频率。
 
 程序依赖包安装：
 
@@ -41,7 +41,7 @@ npm run release
       restart: unless-stopped
       environment:
         - TZ=Asia/Shanghai
-        - DOMAIN_SET=*.ptzone.xyz,*.raingfh.top,*.xingyunge.top,*.cspt.top,*.ptchina.org,*.ptfans.cc,*.ptlover.cc,*.pandapt.net,*.zmpt.cc,*.ptzone.xyz  #需要绑定优选IP的域名，逗号分隔
+        - DOMAIN_SET=www.aaa.com,www.bbb.com  #需要绑定优选IP的域名，逗号分隔，路由器上存在域名就会修改，没有存在就会添加
         - ROUTER_USERNAME=ikuai  #ikuai账号，建议单独搞个账号。只提供DNS查询修改权限
         - ROUTER_PASSWORD=123456 #ikuai密码
         - ROUTER_IP=192.168.1.1  #ikuai地址
@@ -64,7 +64,7 @@ npm run release
     --restart unless-stopped \
     --memory=512m \
     -e TZ=Asia/Shanghai \
-    -e DOMAIN_SET="*.ptzone.xyz,*.raingfh.top,*.xingyunge.top,*.cspt.top,*.ptchina.org,*.ptfans.cc,*.ptlover.cc,*.pandapt.net,*.zmpt.cc,*.ptzone.xyz" \
+    -e DOMAIN_SET="www.aaa.com,www.bbb.com" \
     -e ROUTER_USERNAME=ikuai \
     -e ROUTER_PASSWORD=123456 \
     -e ROUTER_IP=192.168.1.1 \
