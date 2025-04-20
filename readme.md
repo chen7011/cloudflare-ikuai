@@ -17,7 +17,7 @@ npm run start
 程序打包：
 
 ```
-build
+npm run build
 ```
 
 打包后程序会生成到dist文件。将dist文件拷贝到设备上,使用下面命令即可运行
