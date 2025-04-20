@@ -1,0 +1,4 @@
+#域名，每行一个，#表示注释
+www.aaa.com
+www.bbb.com
+www.ccc.com
