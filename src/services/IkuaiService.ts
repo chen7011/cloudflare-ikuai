@@ -1,16 +1,16 @@
 import {ServiceConfigs} from "../configs/ServiceConfigs";
 import path from "path";
 import {Logger, loggers} from "winston";
-import {LoggerUtils} from "../utils/LoggerUtils";
 import {spawn} from "child_process";
 
 import {FileUtils} from "../utils/FileUtils";
 const  ikuai=require('ikuai')
 export class IkuaiService{
     private configs:ServiceConfigs
-    private logger:Logger =LoggerUtils.logger
+    private logger:Logger
     private  script:string=''
-    constructor(configs:ServiceConfigs) {
+    constructor(configs:ServiceConfigs,logger:Logger) {
+        this.logger=logger
         this.configs=configs
         if (process.platform === 'win32') {
             this.logger.info('Running on Windows');
@@ -21,7 +21,6 @@ export class IkuaiService{
             this.script=this.configs.SCRIPT_LINUX
             // 针对 Linux 的处理
         }
-
     }
     private  execSpeedTest(workdir:string,param:Array<any>):Promise<any>{
         this.logger.debug("param:"+param+",workdir:"+workdir+",scrpitName:"+this.script)
@@ -34,21 +33,21 @@ export class IkuaiService{
             // 捕获进程结束
             child.on('close', async (code) => {
                 this.logger.info(`CloudflareST 退出，退出码：${code}`);
-                this.logger.info('测速完成!');
                 resolve('ok')
             });
         })
     }
     private async update2ikuai(ip:Array<string>, type:string, domain_set:Array<string>) {
+        this.logger.info("开始更新iKuai")
         if (domain_set == null || domain_set.length == 0 || this.configs.ROUTER_IP == null || this.configs.ROUTER_PASSWORD == null || this.configs.ROUTER_USERNAME == null) return
         if (!['ipv4', 'ipv6'].includes(type)) return
         const myRouter = new ikuai(this.configs.ROUTER_IP, this.configs.ROUTER_PORT)
         try {
             const token = await myRouter.login(this.configs.ROUTER_USERNAME, this.configs.ROUTER_PASSWORD)
-            this.logger.info("登录成功！")
+            this.logger.info("ikuai登录成功！")
             this.logger.debug("token:" + token)
         } catch (e) {
-            this.logger.error("登陆失败请检查，IP，端口，用户名与密码是否正确")
+            this.logger.error("登陆失败请检查，IP，端口，用户名与密码是否正确！")
         }
         for (let i = 0; i < domain_set.length; i++) {
             let {Data: {data: result}} = await myRouter.exec("dns", "show", {
@@ -58,16 +57,16 @@ export class IkuaiService{
                 "FILTER2": "parse_type,=," + type,
                 "limit": "0,100"
             })
-            this.logger.info(JSON.stringify(result))
+            this.logger.debug(JSON.stringify(result))
             if (result != null && result.length > 0) {
                 for (let j = 0; j < result.length; j++) {
                     let dnsEntity = JSON.parse(JSON.stringify(result[j]))
                     dnsEntity['dns_addr'] = ip.join(',')
                     let {ErrMsg} = await myRouter.exec("dns", "edit", dnsEntity)
-                    this.logger.info("修改：" + ErrMsg)
+                    this.logger.debug("修改：" + ErrMsg)
                 }
             } else {
-                this.logger.info("不存在。新建")
+                this.logger.debug("不存在。新建")
                 let dnsEntity = JSON.parse(JSON.stringify({
                     "dns_addr": ip.join(','),
                     "domain": domain_set[i],
@@ -75,7 +74,7 @@ export class IkuaiService{
                     "parse_type": type
                 }))
                 try {
-                    this.logger.info("添加：" + JSON.stringify(dnsEntity))
+                    this.logger.debug("添加：" + JSON.stringify(dnsEntity))
                     await myRouter.exec("dns", "add", dnsEntity)
                 } catch (e) {
 
@@ -83,8 +82,12 @@ export class IkuaiService{
 
             }
         }
+        this.logger.info("更新iKuai成功！")
     }
     public async task() {
+        this.logger.info("开始执行任务！")
+        let domain=FileUtils.loadDomainList('./configs/domain.txt');
+        this.logger.info("需要更新的域名"+JSON.stringify(domain))
         if (this.script == null || this.script == '') {
             this.logger.error("系统不支持，请使用win32或者linux")
             return
@@ -108,18 +111,21 @@ export class IkuaiService{
         this.logger.debug("path:" + __dirname)
         // 拼接工作目录
         const workdir = path.join(__dirname, 'assets');
+        this.logger.info("开始V4测速")
         await this.execSpeedTest(workdir, ['-o', this.configs.FILE, ...option])
+        this.logger.info('V4测速完成!');
         let ip:Array<string> = await FileUtils.readCsv2IpArray(path.join(workdir, this.configs.FILE), this.configs.SELECT_NUM);
-        this.logger.info("ip--->:"+ip)
-        await this.update2ikuai(ip,'ipv4',this.configs.DOMAIN_SET)
+        this.logger.debug("ipv4->:"+ip)
+        await this.update2ikuai(ip,'ipv4',domain)
 
         if (this.configs.ENABLE_V6){
             this.logger.info("V6测速......")
             await this.execSpeedTest(workdir,['-o', this.configs.FILE6,'-f','ipv6.txt',...option]);
+            this.logger.info('V6测速完成!');
             let ip6=await FileUtils.readCsv2IpArray(path.join(workdir, this.configs.FILE6),this.configs.SELECT_NUM)
-            this.logger.info("V6---->:"+ip6)
-            await this.update2ikuai(ip6,'ipv6',this.configs.DOMAIN_SET)
+            this.logger.debug("ipv6->:"+ip6)
+            await this.update2ikuai(ip6,'ipv6',domain)
         }
-        this.logger.info('测速结束')
+        this.logger.info('任务结束！')
     }
 }

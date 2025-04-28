@@ -12,12 +12,12 @@ export class App {
     }
 
     public main() {
-        this.logger.debug("1213");
-        let task = new IkuaiService(this.configs);
+        this.logger.info("程序启动中...")
+        let task = new IkuaiService(this.configs,this.logger);
         task.task();
         cron.schedule(this.configs.CRON,()=>{
-            this.logger.info("开始定时任务，更新CF优选----")
             task.task();
         }).start()
+        this.logger.info("程序启动成功！")
     }
 }

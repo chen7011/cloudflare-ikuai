@@ -12,9 +12,9 @@ export interface ServiceConfigs {
      SL:number
      SELECT_NUM:number
      LOG_LEVEL:string
-     DOMAIN_SET: Array<string>
      SCRIPT_WIN: string
     SCRIPT_LINUX: string
     FILE:string
     FILE6:string
+    TZ:string
 }

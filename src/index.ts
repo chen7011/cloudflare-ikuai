@@ -2,10 +2,10 @@ import {App} from "./App";
 import winston from "winston";
 import env from 'dotenv'
 import {ServiceConfigs} from "./configs/ServiceConfigs";
-import {FileUtils} from "./utils/FileUtils";
+import moment from 'moment-timezone'
 console.log('Hello, TypeScript!');
 env.config({path:'./configs/service.env'});
-let domain=FileUtils.loadDomainList('./configs/domain.txt');
+
 const configs: ServiceConfigs = {
     ENABLE_V6: process.env.ENABLE_V6 === 'true',
     CRON: process.env.CRON || '0 0 0 * * *',
@@ -20,11 +20,11 @@ const configs: ServiceConfigs = {
     SL: Number(process.env.SPEED_LIMIT || 0),
     SELECT_NUM: Number(process.env.SELECT_NUM || 0),
     LOG_LEVEL: process.env.LOG_LEVEL || 'info',
-    DOMAIN_SET:domain,
     SCRIPT_LINUX:'CloudflareST',
     SCRIPT_WIN:'CloudflareST.exe',
     FILE:'result.csv',
-    FILE6:'result6.csv'
+    FILE6:'result6.csv',
+    TZ: process.env.TZ||'Asia/Shanghai'
 };
 
 const log=winston.createLogger({
@@ -32,12 +32,13 @@ const log=winston.createLogger({
     format: winston.format.combine(
         winston.format.timestamp(),
         winston.format.printf(({ timestamp, level, message }) => {
-            return `${timestamp} [${level.toUpperCase()}]: ${message}`;
+            const shanghaiTime = moment(timestamp as string).tz(configs.TZ).format('YYYY-MM-DD HH:mm:ss:SSS')
+            return `${shanghaiTime} [${level.toUpperCase()}]: ${message}`;
         })
     ),
     transports: [
         new winston.transports.Console(),
-        new winston.transports.File({ filename: './log/app.log' })
+        new winston.transports.File({ filename: './logs/app.log' })
     ]
 });
 
