@@ -1,6 +1,6 @@
 #           cloudflare-ikuai
 
-国外一些网站会用cloudflare的CDN，国内用户访问cloudflare不是很友好，常用CF优选寻找速度快的CDN节点来绑定域名，IP寻找到以后需要手动一个个添加到ikuai路由器的DNS代理列表中，相当麻烦。于是有了这个软件。他会对cloudflare公开的CDN节点IP测速并且找出速度快的，将IP和域名做绑定。更新到ikuai路由器中去。默认每天0点会执行一次，可以环境变量调整频率。
+国外一些网站会用cloudflare的CDN，国内用户访问cloudflare不是很友好，常用CF优选寻找速度快的CDN节点来绑定域名，IP寻找到以后需要手动添加到ikuai路由器的DNS代理列表中，如果维护域名数量庞大，工作量相当大。于是有了这个软件。他会对cloudflare公开的CDN节点IP测速并且找出速度快的，将IP和域名做绑定。更新到ikuai路由器中去。默认每天0点会执行一次，可以环境变量调整频率。
 
 程序依赖包安装：
 
