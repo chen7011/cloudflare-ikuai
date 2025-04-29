@@ -25,6 +25,9 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: './assets', to: 'assets' }, // 将 src/assets 目录下的所有文件复制到 dist/assets
+                {from: './scripts',to: ''},
+                {from:'./configs',to:'defaults'},
+                {from:'./configs',to:'configs'}
             ],
         }),
     ],

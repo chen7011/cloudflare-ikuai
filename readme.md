@@ -43,7 +43,7 @@ npm run build
     environment:
       - TZ=Asia/Shanghai
     volumes:
-      - ${config_dir}/cloudflare-ikuai/configs:/app/configs
+      - ./cloudflare-ikuai/configs:/app/configs
     mem_limit: 512m
   ```
 

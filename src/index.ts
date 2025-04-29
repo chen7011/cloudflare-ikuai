@@ -3,10 +3,10 @@ import winston from "winston";
 import env from 'dotenv'
 import {ServiceConfigs} from "./configs/ServiceConfigs";
 import moment from 'moment-timezone'
-console.log('Hello, TypeScript!');
 env.config({path:'./configs/service.env'});
 
 const configs: ServiceConfigs = {
+
     ENABLE_V6: process.env.ENABLE_V6 === 'true',
     CRON: process.env.CRON || '0 0 0 * * *',
     ROUTER_USERNAME: process.env.ROUTER_USERNAME || '',
@@ -24,7 +24,20 @@ const configs: ServiceConfigs = {
     SCRIPT_WIN:'CloudflareST.exe',
     FILE:'result.csv',
     FILE6:'result6.csv',
-    TZ: process.env.TZ||'Asia/Shanghai'
+    TZ: process.env.TZ||'Asia/Shanghai',
+
+    DT: Number(process.env.DOWNLOAD_TIME),
+    DD:process.env.DISABLE_DOWNLOAD==='true',
+    HTTPING_CODE:Number(process.env.HTTP_PING_CODE),
+    HTTPING:process.env.HTTP_PING==='true',
+    ALLIP:process.env.ALL_IP==='true',
+    CF_COLO:process.env.CF_COLO||'',
+    N: Number(process.env.THREAD),
+    T: Number(process.env.DELAYED_TESTS),
+    TP: Number(process.env.TEST_PORT),
+    URL: process.env.URL||'',
+
+
 };
 
 const log=winston.createLogger({

@@ -108,11 +108,45 @@ export class IkuaiService{
         if (this.configs.SL != null && this.configs.SL > 0) {
             option.push('-sl', this.configs.SL)
         }
+       //附加参数
+        if (this.configs.DT != null && this.configs.DT > 0) {
+            option.push('-dt', this.configs.DT)
+        }
+        if (this.configs.DD) {
+            option.push('-dd')
+        }
+        if (this.configs.HTTPING) {
+            option.push('-httping')
+        }
+        if (this.configs.HTTPING_CODE != null && this.configs.HTTPING_CODE > 0) {
+            option.push('-httping-code', this.configs.HTTPING_CODE)
+        }
+        if (this.configs.ALLIP) {
+            option.push('-allip')
+        }
+        if (this.configs.CF_COLO != null && this.configs.CF_COLO!='') {
+            option.push('-cfcolo', this.configs.CF_COLO)
+        }
+        if (this.configs.N != null && this.configs.N > 0) {
+            option.push('-n', this.configs.N)
+        }
+        if (this.configs.T != null && this.configs.T > 0) {
+            option.push('-t', this.configs.T)
+        }
+        if (this.configs.TP != null && this.configs.TP > 0) {
+            option.push('-tp', this.configs.TP)
+        }
+        if (this.configs.URL != null && this.configs.URL != '') {
+            option.push('-url', this.configs.URL)
+        }
+
         this.logger.debug("path:" + __dirname)
         // 拼接工作目录
         const workdir = path.join(__dirname, 'assets');
+        const v4List= path.join(__dirname,'configs','ip.txt')
+        const v6List= path.join(__dirname,'configs','ipv6.txt')
         this.logger.info("开始V4测速")
-        await this.execSpeedTest(workdir, ['-o', this.configs.FILE, ...option])
+        await this.execSpeedTest(workdir, ['-o', this.configs.FILE,'-f',v4List, ...option])
         this.logger.info('V4测速完成!');
         let ip:Array<string> = await FileUtils.readCsv2IpArray(path.join(workdir, this.configs.FILE), this.configs.SELECT_NUM);
         this.logger.debug("ipv4->:"+ip)
@@ -120,7 +154,7 @@ export class IkuaiService{
 
         if (this.configs.ENABLE_V6){
             this.logger.info("V6测速......")
-            await this.execSpeedTest(workdir,['-o', this.configs.FILE6,'-f','ipv6.txt',...option]);
+            await this.execSpeedTest(workdir,['-o', this.configs.FILE6,'-f',v6List,...option]);
             this.logger.info('V6测速完成!');
             let ip6=await FileUtils.readCsv2IpArray(path.join(workdir, this.configs.FILE6),this.configs.SELECT_NUM)
             this.logger.debug("ipv6->:"+ip6)
