@@ -1,0 +1,289 @@
+2025-04-29 14:39:27:056 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai"}
+2025-04-29 14:39:27:059 [INFO]: 程序启动中...
+2025-04-29 14:39:27:060 [INFO]: Running on Windows
+2025-04-29 14:39:27:060 [INFO]: 开始执行任务！
+2025-04-29 14:39:27:067 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 14:39:27:067 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 14:39:27:067 [INFO]: 开始V4测速
+2025-04-29 14:39:27:068 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\assets\ipset\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 14:39:27:109 [INFO]: 程序启动成功！
+2025-04-29 14:40:40:631 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai"}
+2025-04-29 14:40:40:635 [INFO]: 程序启动中...
+2025-04-29 14:40:40:635 [INFO]: Running on Windows
+2025-04-29 14:40:40:636 [INFO]: 开始执行任务！
+2025-04-29 14:40:40:637 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 14:40:40:637 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 14:40:40:637 [INFO]: 开始V4测速
+2025-04-29 14:40:40:638 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\assets\ipset\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 14:40:40:644 [INFO]: 程序启动成功！
+2025-04-29 14:47:42:701 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai"}
+2025-04-29 14:47:42:705 [INFO]: 程序启动中...
+2025-04-29 14:47:42:706 [INFO]: Running on Windows
+2025-04-29 14:47:42:706 [INFO]: 开始执行任务！
+2025-04-29 14:47:42:707 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 14:47:42:707 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 14:47:42:708 [INFO]: 开始V4测速
+2025-04-29 14:47:42:708 [DEBUG]: param:-o,result.csv,-f,ipset\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 14:47:42:715 [INFO]: 程序启动成功！
+2025-04-29 14:54:29:210 [INFO]: CloudflareST 退出，退出码：0
+2025-04-29 14:54:29:210 [INFO]: V4测速完成!
+2025-04-29 14:54:29:244 [DEBUG]: ipv4->:162.159.135.76,162.159.136.105,172.64.176.172
+2025-04-29 14:54:29:245 [INFO]: 开始更新iKuai
+2025-04-29 14:54:30:922 [INFO]: ikuai登录成功！
+2025-04-29 14:54:30:923 [DEBUG]: token:sess_key=4ca95c46d3af301945d28d5d3fb8a8ab; path=/;
+2025-04-29 14:54:31:687 [DEBUG]: []
+2025-04-29 14:54:31:689 [DEBUG]: 不存在。新建
+2025-04-29 14:54:31:691 [DEBUG]: 添加：{"dns_addr":"162.159.135.76,162.159.136.105,172.64.176.172","domain":"www.aaa.com","enabled":"yes","parse_type":"ipv4"}
+2025-04-29 14:54:33:312 [DEBUG]: []
+2025-04-29 14:54:33:313 [DEBUG]: 不存在。新建
+2025-04-29 14:54:33:313 [DEBUG]: 添加：{"dns_addr":"162.159.135.76,162.159.136.105,172.64.176.172","domain":"www.bbb.com","enabled":"yes","parse_type":"ipv4"}
+2025-04-29 14:54:35:635 [DEBUG]: []
+2025-04-29 14:54:35:636 [DEBUG]: 不存在。新建
+2025-04-29 14:54:35:639 [DEBUG]: 添加：{"dns_addr":"162.159.135.76,162.159.136.105,172.64.176.172","domain":"www.ccc.com","enabled":"yes","parse_type":"ipv4"}
+2025-04-29 14:54:37:244 [INFO]: 更新iKuai成功！
+2025-04-29 14:54:37:246 [INFO]: V6测速......
+2025-04-29 14:54:37:247 [DEBUG]: param:-o,result6.csv,-f,ipset\ipv6.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 16:10:24:326 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai"}
+2025-04-29 16:10:24:330 [INFO]: 程序启动中...
+2025-04-29 16:10:24:330 [INFO]: Running on Windows
+2025-04-29 16:10:24:331 [INFO]: 开始执行任务！
+2025-04-29 16:10:24:331 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 16:10:24:332 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 16:10:24:332 [INFO]: 开始V4测速
+2025-04-29 16:10:24:332 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ipset\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 16:10:24:372 [INFO]: 程序启动成功！
+2025-04-29 16:10:24:424 [INFO]: CloudflareST 退出，退出码：1
+2025-04-29 16:10:24:425 [INFO]: V4测速完成!
+2025-04-29 16:17:27:870 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai"}
+2025-04-29 16:17:27:874 [INFO]: 程序启动中...
+2025-04-29 16:17:27:874 [INFO]: Running on Windows
+2025-04-29 16:17:27:875 [INFO]: 开始执行任务！
+2025-04-29 16:17:27:875 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 16:17:27:876 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 16:17:27:876 [INFO]: 开始V4测速
+2025-04-29 16:17:27:876 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ipset\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 16:17:27:884 [INFO]: 程序启动成功！
+2025-04-29 16:19:57:755 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai"}
+2025-04-29 16:19:57:759 [INFO]: 程序启动中...
+2025-04-29 16:19:57:761 [INFO]: Running on Windows
+2025-04-29 16:19:57:761 [INFO]: 开始执行任务！
+2025-04-29 16:19:57:762 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 16:19:57:762 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 16:19:57:762 [INFO]: 开始V4测速
+2025-04-29 16:19:57:763 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ipset\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 16:19:57:769 [INFO]: 程序启动成功！
+2025-04-29 16:25:45:660 [INFO]: CloudflareST 退出，退出码：0
+2025-04-29 16:25:45:660 [INFO]: V4测速完成!
+2025-04-29 16:25:45:691 [DEBUG]: ipv4->:172.66.217.115,172.65.94.1,172.65.87.26
+2025-04-29 16:25:45:692 [INFO]: 开始更新iKuai
+2025-04-29 16:25:46:383 [INFO]: ikuai登录成功！
+2025-04-29 16:25:46:383 [DEBUG]: token:sess_key=a8d999c8f7bfc6375aea73069d43cb41; path=/;
+2025-04-29 16:25:47:145 [DEBUG]: [{"domain":"www.aaa.com","parse_type":"ipv4","dns_addr":"162.159.135.76,162.159.136.105,172.64.176.172","is_ipv6":0,"enabled":"yes","src_addr":"","comment":"","id":26}]
+2025-04-29 16:25:47:993 [DEBUG]: 修改：Success
+2025-04-29 16:25:48:744 [DEBUG]: [{"domain":"www.bbb.com","parse_type":"ipv4","dns_addr":"162.159.135.76,162.159.136.105,172.64.176.172","is_ipv6":0,"enabled":"yes","src_addr":"","comment":"","id":27}]
+2025-04-29 16:25:49:615 [DEBUG]: 修改：Success
+2025-04-29 16:25:50:365 [DEBUG]: [{"enabled":"yes","is_ipv6":0,"comment":"","id":28,"domain":"www.ccc.com","parse_type":"ipv4","dns_addr":"162.159.135.76,162.159.136.105,172.64.176.172","src_addr":""}]
+2025-04-29 16:25:51:216 [DEBUG]: 修改：Success
+2025-04-29 16:25:51:217 [INFO]: 更新iKuai成功！
+2025-04-29 16:25:51:217 [INFO]: V6测速......
+2025-04-29 16:25:51:217 [DEBUG]: param:-o,result6.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ipset\ipv6.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:35:09:847 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:35:09:852 [INFO]: 程序启动中...
+2025-04-29 18:35:09:854 [INFO]: Running on Windows
+2025-04-29 18:35:09:854 [INFO]: 开始执行任务！
+2025-04-29 18:35:09:855 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:35:09:855 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:35:09:855 [INFO]: 开始V4测速
+2025-04-29 18:35:09:856 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:35:09:897 [INFO]: 程序启动成功！
+2025-04-29 18:36:03:902 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":10,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:36:03:906 [INFO]: 程序启动中...
+2025-04-29 18:36:03:906 [INFO]: Running on Windows
+2025-04-29 18:36:03:907 [INFO]: 开始执行任务！
+2025-04-29 18:36:03:907 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:36:03:908 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:36:03:908 [INFO]: 开始V4测速
+2025-04-29 18:36:03:908 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-dt,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:36:03:915 [INFO]: 程序启动成功！
+2025-04-29 18:37:00:257 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:37:00:261 [INFO]: 程序启动中...
+2025-04-29 18:37:00:262 [INFO]: Running on Windows
+2025-04-29 18:37:00:262 [INFO]: 开始执行任务！
+2025-04-29 18:37:00:262 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:37:00:263 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:37:00:263 [INFO]: 开始V4测速
+2025-04-29 18:37:00:263 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:37:00:269 [INFO]: 程序启动成功！
+2025-04-29 18:38:42:228 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":true,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:38:42:232 [INFO]: 程序启动中...
+2025-04-29 18:38:42:233 [INFO]: Running on Windows
+2025-04-29 18:38:42:233 [INFO]: 开始执行任务！
+2025-04-29 18:38:42:234 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:38:42:234 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:38:42:234 [INFO]: 开始V4测速
+2025-04-29 18:38:42:235 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-dd,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:38:42:241 [INFO]: 程序启动成功！
+2025-04-29 18:39:24:584 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":"https://cf.xiu2.xyz/url"}
+2025-04-29 18:39:24:588 [INFO]: 程序启动中...
+2025-04-29 18:39:24:590 [INFO]: Running on Windows
+2025-04-29 18:39:24:590 [INFO]: 开始执行任务！
+2025-04-29 18:39:24:591 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:39:24:592 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:39:24:592 [INFO]: 开始V4测速
+2025-04-29 18:39:24:592 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-url,https://cf.xiu2.xyz/url,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:39:24:608 [INFO]: 程序启动成功！
+2025-04-29 18:40:05:773 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":443,"URL":""}
+2025-04-29 18:40:05:777 [INFO]: 程序启动中...
+2025-04-29 18:40:05:777 [INFO]: Running on Windows
+2025-04-29 18:40:05:778 [INFO]: 开始执行任务！
+2025-04-29 18:40:05:779 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:40:05:779 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:40:05:779 [INFO]: 开始V4测速
+2025-04-29 18:40:05:780 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-tp,443,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:40:05:786 [INFO]: 程序启动成功！
+2025-04-29 18:40:55:609 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:40:55:613 [INFO]: 程序启动中...
+2025-04-29 18:40:55:614 [INFO]: Running on Windows
+2025-04-29 18:40:55:615 [INFO]: 开始执行任务！
+2025-04-29 18:40:55:616 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:40:55:616 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:40:55:616 [INFO]: 开始V4测速
+2025-04-29 18:40:55:617 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:40:55:623 [INFO]: 程序启动成功！
+2025-04-29 18:41:15:943 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:41:15:947 [INFO]: 程序启动中...
+2025-04-29 18:41:15:949 [INFO]: Running on Windows
+2025-04-29 18:41:15:950 [INFO]: 开始执行任务！
+2025-04-29 18:41:15:951 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:41:15:952 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:41:15:952 [INFO]: 开始V4测速
+2025-04-29 18:41:15:952 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:41:15:959 [INFO]: 程序启动成功！
+2025-04-29 18:41:49:793 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":true,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:41:49:798 [INFO]: 程序启动中...
+2025-04-29 18:41:49:798 [INFO]: Running on Windows
+2025-04-29 18:41:49:799 [INFO]: 开始执行任务！
+2025-04-29 18:41:49:799 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:41:49:800 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:41:49:800 [INFO]: 开始V4测速
+2025-04-29 18:41:49:800 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-httping,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:41:49:807 [INFO]: 程序启动成功！
+2025-04-29 18:42:24:481 [INFO]: CloudflareST 退出，退出码：0
+2025-04-29 18:42:24:482 [INFO]: V4测速完成!
+2025-04-29 18:43:06:489 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:43:06:494 [INFO]: 程序启动中...
+2025-04-29 18:43:06:494 [INFO]: Running on Windows
+2025-04-29 18:43:06:495 [INFO]: 开始执行任务！
+2025-04-29 18:43:06:495 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:43:06:496 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:43:06:496 [INFO]: 开始V4测速
+2025-04-29 18:43:06:496 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:43:06:504 [INFO]: 程序启动成功！
+2025-04-29 18:44:01:779 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":200,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:44:01:783 [INFO]: 程序启动中...
+2025-04-29 18:44:01:784 [INFO]: Running on Windows
+2025-04-29 18:44:01:784 [INFO]: 开始执行任务！
+2025-04-29 18:44:01:785 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:44:01:785 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:44:01:786 [INFO]: 开始V4测速
+2025-04-29 18:44:01:786 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-httping-code,200,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:44:01:802 [INFO]: 程序启动成功！
+2025-04-29 18:45:07:682 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":200,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:45:07:686 [INFO]: 程序启动中...
+2025-04-29 18:45:07:687 [INFO]: Running on Windows
+2025-04-29 18:45:07:687 [INFO]: 开始执行任务！
+2025-04-29 18:45:07:688 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:45:07:688 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:45:07:689 [INFO]: 开始V4测速
+2025-04-29 18:45:07:689 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-httping-code,200,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:45:07:695 [INFO]: 程序启动成功！
+2025-04-29 18:45:35:379 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":true,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:45:35:383 [INFO]: 程序启动中...
+2025-04-29 18:45:35:383 [INFO]: Running on Windows
+2025-04-29 18:45:35:384 [INFO]: 开始执行任务！
+2025-04-29 18:45:35:384 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:45:35:385 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:45:35:385 [INFO]: 开始V4测速
+2025-04-29 18:45:35:385 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-httping,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:45:35:392 [INFO]: 程序启动成功！
+2025-04-29 18:45:51:651 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":10,"DD":true,"HTTPING_CODE":200,"HTTPING":true,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":443,"URL":"https://cf.xiu2.xyz/url"}
+2025-04-29 18:45:51:656 [INFO]: 程序启动中...
+2025-04-29 18:45:51:656 [INFO]: Running on Windows
+2025-04-29 18:45:51:657 [INFO]: 开始执行任务！
+2025-04-29 18:45:51:657 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:45:51:658 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:45:51:658 [INFO]: 开始V4测速
+2025-04-29 18:45:51:658 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-dt,10,-dd,-httping,-httping-code,200,-tp,443,-url,https://cf.xiu2.xyz/url,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:45:51:666 [INFO]: 程序启动成功！
+2025-04-29 18:47:57:247 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":10,"DD":true,"HTTPING_CODE":null,"HTTPING":true,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":443,"URL":"https://cf.xiu2.xyz/url"}
+2025-04-29 18:47:57:251 [INFO]: 程序启动中...
+2025-04-29 18:47:57:252 [INFO]: Running on Windows
+2025-04-29 18:47:57:252 [INFO]: 开始执行任务！
+2025-04-29 18:47:57:253 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:47:57:253 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:47:57:253 [INFO]: 开始V4测速
+2025-04-29 18:47:57:254 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-dt,10,-dd,-httping,-tp,443,-url,https://cf.xiu2.xyz/url,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:47:57:261 [INFO]: 程序启动成功！
+2025-04-29 18:49:12:567 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":10,"DD":false,"HTTPING_CODE":null,"HTTPING":true,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":443,"URL":"https://cf.xiu2.xyz/url"}
+2025-04-29 18:49:12:571 [INFO]: 程序启动中...
+2025-04-29 18:49:12:571 [INFO]: Running on Windows
+2025-04-29 18:49:12:572 [INFO]: 开始执行任务！
+2025-04-29 18:49:12:572 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:49:12:572 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:49:12:572 [INFO]: 开始V4测速
+2025-04-29 18:49:12:573 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-dt,10,-httping,-tp,443,-url,https://cf.xiu2.xyz/url,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:49:12:579 [INFO]: 程序启动成功！
+2025-04-29 18:49:54:743 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":false,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:49:54:747 [INFO]: 程序启动中...
+2025-04-29 18:49:54:748 [INFO]: Running on Windows
+2025-04-29 18:49:54:748 [INFO]: 开始执行任务！
+2025-04-29 18:49:54:749 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:49:54:749 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:49:54:749 [INFO]: 开始V4测速
+2025-04-29 18:49:54:749 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:49:54:755 [INFO]: 程序启动成功！
+2025-04-29 18:50:39:266 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":true,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 18:50:39:270 [INFO]: 程序启动中...
+2025-04-29 18:50:39:271 [INFO]: Running on Windows
+2025-04-29 18:50:39:272 [INFO]: 开始执行任务！
+2025-04-29 18:50:39:272 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:50:39:273 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:50:39:273 [INFO]: 开始V4测速
+2025-04-29 18:50:39:273 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-allip,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:50:39:280 [INFO]: 程序启动成功！
+2025-04-29 18:53:42:774 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":true,"CF_COLO":"","N":null,"T":4,"TP":null,"URL":""}
+2025-04-29 18:53:42:778 [INFO]: 程序启动中...
+2025-04-29 18:53:42:779 [INFO]: Running on Windows
+2025-04-29 18:53:42:779 [INFO]: 开始执行任务！
+2025-04-29 18:53:42:780 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:53:42:780 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:53:42:781 [INFO]: 开始V4测速
+2025-04-29 18:53:42:781 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-allip,-t,4,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:53:42:788 [INFO]: 程序启动成功！
+2025-04-29 18:54:01:557 [DEBUG]: 配置：{"ENABLE_V6":true,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":true,"CF_COLO":"","N":200,"T":null,"TP":null,"URL":""}
+2025-04-29 18:54:01:562 [INFO]: 程序启动中...
+2025-04-29 18:54:01:563 [INFO]: Running on Windows
+2025-04-29 18:54:01:564 [INFO]: 开始执行任务！
+2025-04-29 18:54:01:565 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:54:01:566 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:54:01:566 [INFO]: 开始V4测速
+2025-04-29 18:54:01:567 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-allip,-n,200,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:54:01:573 [INFO]: 程序启动成功！
+2025-04-29 18:57:42:860 [DEBUG]: 配置：{"ENABLE_V6":false,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":true,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":"https://cf.xiu2.xyz/url"}
+2025-04-29 18:57:42:864 [INFO]: 程序启动中...
+2025-04-29 18:57:42:864 [INFO]: Running on Windows
+2025-04-29 18:57:42:865 [INFO]: 开始执行任务！
+2025-04-29 18:57:42:865 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 18:57:42:866 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 18:57:42:866 [INFO]: 开始V4测速
+2025-04-29 18:57:42:866 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-allip,-url,https://cf.xiu2.xyz/url,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 18:57:42:874 [INFO]: 程序启动成功！
+2025-04-29 19:01:15:175 [DEBUG]: 配置：{"ENABLE_V6":false,"CRON":"0 0 0 * * *","ROUTER_USERNAME":"cloudflare","ROUTER_PASSWORD":"a123456","ROUTER_IP":"192.168.1.1","ROUTER_PORT":0,"DN":10,"TL":200,"TLL":1,"TLR":0.2,"SL":10,"SELECT_NUM":3,"LOG_LEVEL":"debug","SCRIPT_LINUX":"CloudflareST","SCRIPT_WIN":"CloudflareST.exe","FILE":"result.csv","FILE6":"result6.csv","TZ":"Asia/Shanghai","DT":null,"DD":false,"HTTPING_CODE":null,"HTTPING":false,"ALLIP":true,"CF_COLO":"","N":null,"T":null,"TP":null,"URL":""}
+2025-04-29 19:01:15:179 [INFO]: 程序启动中...
+2025-04-29 19:01:15:180 [INFO]: Running on Windows
+2025-04-29 19:01:15:180 [INFO]: 开始执行任务！
+2025-04-29 19:01:15:181 [INFO]: 需要更新的域名["www.aaa.com","www.bbb.com","www.ccc.com"]
+2025-04-29 19:01:15:181 [DEBUG]: path:D:\Documents\project\cloudflare-ikuai\dist
+2025-04-29 19:01:15:182 [INFO]: 开始V4测速
+2025-04-29 19:01:15:182 [DEBUG]: param:-o,result.csv,-f,D:\Documents\project\cloudflare-ikuai\dist\configs\ip.txt,-dn,10,-tl,200,-tll,1,-tlr,0.2,-sl,10,-allip,workdir:D:\Documents\project\cloudflare-ikuai\dist\assets,scrpitName:CloudflareST.exe
+2025-04-29 19:01:15:188 [INFO]: 程序启动成功！
