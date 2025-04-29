@@ -73,7 +73,8 @@ npm run build
        - 需要测速的IPV4
     - ipv6.txt 
       - 需要测速的IPV6,需要在service.env配置文件里面打开V6
-参考项目：
+  
+- 参考项目：
 
 [XIU2/CloudflareSpeedTest: 🌩「自选优选 IP」测试 Cloudflare CDN 延迟和速度，获取最快 IP ！当然也支持其他 CDN / 网站 IP ~](https://github.com/XIU2/CloudflareSpeedTest)
 
